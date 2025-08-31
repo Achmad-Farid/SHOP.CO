@@ -71,7 +71,7 @@ Route::prefix('v1')->group(function () {
   | AUTH REQUIRED - Perlu login
 -
   */
-  Route::middleware('auth:sanctum')->group(function () {
+  Route::middleware(['web','auth:sanctum'])->group(function () {
 
     // ===== Reviews =====
     // Tulis review suatu produk (butuh identitas user)
