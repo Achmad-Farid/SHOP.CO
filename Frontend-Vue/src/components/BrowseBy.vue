@@ -49,7 +49,7 @@
 
 <script setup>
 const props = defineProps({
-  title: { type: String, default: "Browse by Dress Style" },
+  title: { type: String, default: "BROWSE BY DRESS STYLE" },
   images: {
     type: Object,
     default: () => ({
