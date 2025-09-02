@@ -1,3 +1,12 @@
+<script setup>
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+function goToLogin() {
+  router.push("/login");
+}
+</script>
+
 <template>
   <nav class="bg-white shadow-md">
     <div class="container mx-auto px-4 py-3 flex items-center justify-between">
@@ -41,10 +50,8 @@
         </button>
 
         <!-- Sign In -->
-        <button class="px-4 py-2 bg-black text-white rounded-full hover:bg-gray-800 transition-colors cursor-pointer">Sign In</button>
+        <button @click="goToLogin" class="px-4 py-2 bg-black text-white rounded-full hover:bg-gray-800 transition-colors cursor-pointer">Sign In</button>
       </div>
     </div>
   </nav>
 </template>
-
-<script setup></script>
